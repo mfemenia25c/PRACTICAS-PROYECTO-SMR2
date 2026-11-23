@@ -1,0 +1,14 @@
+package ejemplo;
+
+/**
+ *
+ * @author alumno
+ */
+public class contador {
+    public static void main(String[] args) {
+        System.out.println("Contador");
+        for(int i=0 ; i<=200 ; i=i+5){
+            System.out.println(+i);
+        }
+    }
+}
