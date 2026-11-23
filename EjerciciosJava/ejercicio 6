@@ -1,0 +1,38 @@
+package clase0;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author alumno
+ */
+public class Ejercicio6 {
+   
+       public static void main(String[] args) {
+        Scanner Scanner = new Scanner(System.in);
+
+        System.out.print("Introduce un código de error: ");
+        int codigo = Scanner.nextInt();
+
+        MensajeError(codigo);
+
+        Scanner.close();
+    }
+   
+    public static void MensajeError(int codigo) {
+        switch (codigo) {
+            case 1: 
+                    System.out.println("Error en memoria.");
+                    break;
+            case 2:  
+                    System.out.println("Papel atascado en impresora.");
+                    break;
+            case 3: 
+                    System.out.println("Disco defectuoso.");
+                    break;
+            default: 
+                    System.out.println("Error indefinido.");
+        }
+    }
+
+}
