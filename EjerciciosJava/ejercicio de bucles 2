@@ -1,0 +1,37 @@
+public class BucleDoWhile {
+     public static void main(String[] args) {
+         Scanner teclado = new Scanner(System.in);
+         int a = -1;
+         do{
+             System.out.println("1 Real Madrid");
+             System.out.println("2 Barcelona");
+             System.out.println("3 CD Alcoyano");
+             System.out.println("4 Betis");
+             System.out.println("0 Salir");
+             System.out.println("Opcion");
+             a=teclado.nextInt();
+             switch (a) {
+                 case 1:
+                     System.out.println("Va primero");
+                     break;
+                 case 2:
+                     System.out.println("Va ultimo");
+                     break;
+                 case 3:
+                     System.out.println("Mitad tabla");
+                     break;
+                 case 4:
+                     System.out.println("Descenso");
+                     break;
+                 case 0:
+                     System.out.println("Adios bendiciones");
+                     break;
+                 default:
+                     //mensaje de error
+                     System.out.println("Esa opcion es incorrecta");
+             }
+         }while(a!=0);
+     }
+}
+
+
