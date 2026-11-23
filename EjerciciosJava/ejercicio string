@@ -1,0 +1,53 @@
+package ejemplo;
+
+/**
+ *
+ * @author alumno
+ */
+public class EjerciciosString {
+    
+    public static void main(String[] args){
+        
+        String txt = "HOLA ,QUE ,TAL";
+        
+        String cad1="HOLA";
+        String cad2="HOLA";
+        
+        /*
+        System.out.println(txt);
+        System.out.println(txt.charAt(3));
+        
+        String txt2 = txt;
+        String txt3 = txt2.concat("ADIOS");
+        
+        System.out.println(txt3);
+        */
+        
+        //longitud
+        for( int i=0;i<txt.length();i++){
+             System.out.println(txt.charAt(i));
+        }
+        
+        //Substring
+        System.out.println("SUBSTRING 5");
+        System.out.println(txt.substring(5));
+        
+        System.out.println(txt);
+        System.out.println("SUBSTRING 1 inicio y 3 final");
+        System.out.println(txt.substring(1, 3));
+        
+        //Split
+        String[] s2=txt.split(" ");
+        System.out.println(s2[0].charAt(0));
+        System.out.println(s2[0].charAt(1));
+        System.out.println(s2[0].charAt(2));
+        
+        if (cad1.compareTo(cad2) ==1){
+            System.out.println(cad1 + " " + cad2 + " son iguales");
+        }
+        System.out.println(cad1 + " " + cad2 + " son distintas");
+    }
+    
+}
+
+
