@@ -1,0 +1,33 @@
+package clase0;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ *
+ * @author alumno
+ */
+public class MisExcepciones {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        try{
+            System.out.println("Dame un valor numerador:");
+            int numerador = teclado.nextInt();
+            System.out.println("Dame un valor denominador:");
+            int denominador = teclado.nextInt();
+            int division = numerador / denominador;
+            System.out.println("El resultado es:"+division);
+        }
+        catch(InputMismatchException ex1){
+            System.out.println("Error no puedes dividir entre 0");
+            System.out.println(ex1);
+        }
+        catch( Exception ex){
+            System.out.println("Error generico!");
+            System.out.println(ex);
+        }
+    }
+    
+}
+
