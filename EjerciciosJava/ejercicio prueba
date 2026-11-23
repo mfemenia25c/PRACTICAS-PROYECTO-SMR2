@@ -1,0 +1,25 @@
+package clase0;
+
+import java.util.Scanner;
+
+public class MiPrimeraClase {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Dime tu edad");
+        int edad = teclado.nextInt();
+        boolean eresMayorDeEdad = edad >= 18;
+        
+        if (eresMayorDeEdad){
+            System.out.println("Eres mayor de edad");
+        }
+        else
+            System.out.println("Eres menor de edad");
+        
+        System.out.println(eresMayorDeEdad);
+        
+       
+        
+    }
+    
+}
