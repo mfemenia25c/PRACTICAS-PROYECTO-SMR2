@@ -1,0 +1,29 @@
+package ejemplo;
+
+/**
+ *
+ * @author alumno
+ */
+public class EjemplosArray {
+     public static void main(String[] args) {
+         //mi primer array
+         
+         int cantidad=3;
+         int [] fila = new int[cantidad];
+         
+         String[] equipos = new String[cantidad];
+         
+         //Sin new
+         //String [] equipos2 = {"PC1", "PC2", "PC3"};
+         
+         for ( int i=0; i<fila.length ;i++) {
+             fila[i] = -1;
+         }
+         
+         for( int i=0; i< fila.length;i++) {
+            System.out.println("Inicializado " + i +" al valor" +fila[i]);
+         }
+         
+         
+     }
+}
