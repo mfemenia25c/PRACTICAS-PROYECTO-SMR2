@@ -1,0 +1,20 @@
+package clase0;
+
+/**
+ *
+ * @author alumno
+ */
+public class Ejercicio3 {
+    //3. Diseñar una función que tenga 
+    //como parámetros dos números, y que
+    //calcule el máximo.
+    public int maximo(int a, int b){
+        int maximo=0;
+        if (a > b )
+            return a;
+        else
+            return b;
+    }
+}
+
+
