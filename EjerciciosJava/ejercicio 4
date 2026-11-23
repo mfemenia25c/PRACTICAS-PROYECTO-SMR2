@@ -1,0 +1,20 @@
+package clase0;
+
+/**
+ *
+ * @author alumno
+ */
+public class Ejercicio4 {
+    public void numerosEntre( int ini, int fin) {
+    if (fin > ini) {
+       System.out.println("Error el segundo parametro debe ser mayor al primero");
+    }
+    else{
+        //accion de numeros entre ini y fin
+        for (int i = ini; i<=fin ; i++){
+            System.out.println(i);
+ 
+        }
+    }
+  }
+}
