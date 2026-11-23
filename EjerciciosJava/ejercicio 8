@@ -1,0 +1,26 @@
+package clase0;
+
+import static clase0.Ejercicio5.dobleDeEsteNumero;
+import static clase0.Ejercicio5.numerosEntre;
+
+/**
+ *
+ * @author alumno
+ */
+public class Ejercicio8 {
+    public static void ejercicio8(double r, double h){
+            double a = 2*Math.PI*r*(r+h);
+            System.out.println(" El area es: " + a);
+    }
+    
+    public static void main(String[] args){
+        numerosEntre(2,7);
+        numerosEntre(7,2);
+        
+        ejercicio8(54,12);
+        
+        System.out.println("El doble es " + dobleDeEsteNumero(4));
+    }
+}
+
+
