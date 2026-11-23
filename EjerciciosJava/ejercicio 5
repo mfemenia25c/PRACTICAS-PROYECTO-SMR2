@@ -1,0 +1,32 @@
+package clase0;
+
+/**
+ *
+ * @author alumno
+ */
+public class Ejercicio5 {
+    //Ejercicio 5
+    public static int dobleDeEsteNumero(int num){
+        return num*2;
+    }
+   
+    public static void numerosEntre( int ini, int fin) {
+        if (fin < ini) {
+            System.out.println("Error el segundo parametro debe ser mayor al primero");
+        }
+        else {
+            //accion de numeros entre ini y fin
+            for(int i = ini; i<=fin ; i++){
+                System.out.println(i);
+            }
+        }
+    }    
+    public static void main(String[] args) {
+        numerosEntre(2,7);
+        numerosEntre(7,2);    
+       
+        System.out.println("El dobles es " + dobleDeEsteNumero(4) );
+    }
+}
+
+        
